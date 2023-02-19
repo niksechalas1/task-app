@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+-- Instructions
+1. Clone the repository
+2. Create database in the root folder
+3. Create a copy of .env.example file and rename to .env
+4. Update the following to your database credentials. Example below:
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=taskapp
+DB_USERNAME=root
+DB_PASSWORD=testpassword
+5. Open console in the root folder and run 'composer install'
+6. Run 'npm install' then 'npm run dev' to watch files or 'npm run build' to build for production
+7. Run 'php artisan migrate'
+8. Run 'php artisan db:seed' to create sample user (NOTE: you can register a user in the app)
+Sample user email: test@example.com
+Sample user password: 12341234
